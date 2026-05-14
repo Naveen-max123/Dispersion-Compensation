@@ -5,7 +5,24 @@
 Design and simulate a fiber optic system using dispersion-compensating fiber to reduce chromatic dispersion.
 
 ## Theory
-<img width="1398" height="500" alt="image" src="https://github.com/user-attachments/assets/a922bb4a-e871-4643-96a5-b78350cfb8d1" />
+Dispersion-compensating fiber (DCF) provides an optical medium with a relatively large negative chromatic dispersion factor \(D(\lambda)\) at the operating wavelength.  
+
+If a transmission fiber of length \(L_{TF}\) is connected in series with a DCF of length \(L_{DCF}\), then the total chromatic dispersion is given by:
+
+\[
+\Delta D_t(\lambda) = D_{TF}(\lambda) \cdot L_{TF} + D_{DCF}(\lambda) \cdot L_{DCF} \cdot \Delta \lambda
+\]
+
+where:
+- \(D_{TF}(\lambda)\) = chromatic dispersion factor for the transmission fiber  
+- \(D_{DCF}(\lambda)\) = chromatic dispersion factor for the DCF  
+- \(\Delta \lambda\) = transmitter spectral width  
+
+Similarly, the total attenuation loss of the two-fiber combination is:
+
+\[
+Loss = A_{TF} \cdot L_{TF} + A_{DCF} \cdot L_{DCF}
+\]
 
 Therefore, given target values for chromatic dispersion and attenuation loss plus specifications of the transmitter, fiber, and receiver, one can determine the lengths of the transmission fiber and the DCF by solving the above two equations simultaneously.
 
@@ -31,6 +48,8 @@ Therefore, given target values for chromatic dispersion and attenuation loss plu
 1. Determine the maximum allowable fiber loss  
 2. Determine the maximum allowable chromatic dispersion  
 3. Based on the results of (1) and (2), determine the lengths of the transmission fiber and the DCF  
+<img width="1041" height="1600" alt="image" src="https://github.com/user-attachments/assets/6a90b686-a063-4c06-9b60-6a396408a412" />
+<img width="1225" height="1600" alt="image" src="https://github.com/user-attachments/assets/213f7602-ad3d-489f-9c6a-0ebbf5279785" />
 
 ---
 
@@ -69,13 +88,11 @@ The main physical components of this layout are:
 
 ## Further Simulation and Analysis
 - Set the DCF length to 0 and run the simulation again.  
-- Record similar measurements for comparison.  
-<img width="971" height="728" alt="84b548a6-19ff-455a-9ba0-b57af429742c" src="https://github.com/user-attachments/assets/f6bd90de-8dc9-4ed5-a36e-4dc75593fe67" />
-<img width="975" height="729" alt="0af3e36e-5879-4770-9a79-52fb783ffe09" src="https://github.com/user-attachments/assets/d71e29a2-1d5b-4787-b5f1-e040eb5a7d7a" />
-<img width="977" height="735" alt="fa963ddf-fbd8-4a12-8e32-785d67906a8a" src="https://github.com/user-attachments/assets/9b21ee11-0614-46c5-9d1e-83faaf047b53" />
+- Record similar measurements for comparison.
+  <img width="1919" height="1079" alt="Screenshot 2026-02-04 092100" src="https://github.com/user-attachments/assets/1787b8ca-40b8-4bd5-8c31-6c70c73a8ba6" />
+  <img width="1919" height="1079" alt="Screenshot 2026-02-04 092135" src="https://github.com/user-attachments/assets/5fa09dba-5dce-49bd-81b6-b3902331cb9b" />  
 
 ---
 
 ## Conclusions
 Discuss the effectiveness of dispersion-compensating fiber and the ability of the calculations to engineer a viable system.
-<img width="899" height="1599" alt="d7cf5955-502d-44f7-acce-b285aedc749e" src="https://github.com/user-attachments/assets/934bdb8f-1439-47a5-a0d5-a5765d6d3ee9" />
